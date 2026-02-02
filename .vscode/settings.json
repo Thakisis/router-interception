@@ -1,0 +1,42 @@
+{
+  // Configuración de Biome como formateador predeterminado
+  "editor.defaultFormatter": "biomejs.biome",
+  
+  // Formatear al guardar
+  "editor.formatOnSave": true,
+  
+  // Formatear al pegar
+  "editor.formatOnPaste": true,
+  
+  // Acción de organizar imports al guardar
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  
+  // Deshabilitar otros formateadores para evitar conflictos
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  
+  // Deshabilitar ESLint si está instalado para evitar conflictos
+  "eslint.enable": false,
+  
+  // Validación de Biome
+  "biome.lspBin": ""
+}
