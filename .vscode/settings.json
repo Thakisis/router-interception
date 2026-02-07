@@ -1,20 +1,20 @@
 {
-  // Configuración de Biome como formateador predeterminado
+  // Configure Biome as the default formatter
   "editor.defaultFormatter": "biomejs.biome",
-  
-  // Formatear al guardar
+
+  // Format on save
   "editor.formatOnSave": true,
-  
-  // Formatear al pegar
+
+  // Format on paste
   "editor.formatOnPaste": true,
-  
-  // Acción de organizar imports al guardar
+
+  // Organize imports and apply quick fixes on save
   "editor.codeActionsOnSave": {
     "quickfix.biome": "explicit",
     "source.organizeImports.biome": "explicit"
   },
-  
-  // Deshabilitar otros formateadores para evitar conflictos
+
+  // Disable other formatters to avoid conflicts
   "[javascript]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
@@ -33,10 +33,10 @@
   "[jsonc]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  
-  // Deshabilitar ESLint si está instalado para evitar conflictos
+
+  // Disable ESLint if installed to avoid conflicts
   "eslint.enable": false,
-  
-  // Validación de Biome
+
+  // Biome validation
   "biome.lspBin": ""
 }
